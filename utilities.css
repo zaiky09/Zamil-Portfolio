@@ -30,13 +30,13 @@
 }
 
 .btn-primary {
-    background-color: var(--complimentary3);
-    color: var(--bgDark);
+    background-color: var(--white);
+    color: var(--secondary);
 }
 
 .btn-primary:hover {
-    background: transparent;
-    border-color: var(--complimentary3);
+    background: var(--secondary);
+    /* border-color: var(--bgDark); */
     color: var(--white);
 }
 

@@ -24,12 +24,12 @@ body {
 }
 
 header {
-    background-color: var(--bgDark);
+    /* background-color: var(--bgDark); */
     clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
 }
 
 header nav .left a {
-    color: var(--white);
+    color: var(--bgDark);
     text-decoration: none;
     margin-right: 2rem;
     text-transform: uppercase;
@@ -37,7 +37,7 @@ header nav .left a {
 }
 
 header nav .left a:hover {
-    color: var(--complimentary3);
+    color: var(--secondary);
 }
 
 header nav {
@@ -134,7 +134,7 @@ section.about .socials a {
 }
 
 section.about .socials a:hover {
-    background: var(--white);
+    background: var(--secondary);
 }
 
 /* Services */
@@ -172,7 +172,7 @@ section.services .card-grid {
 }
 
 section.services .card-grid .card {
-    background: var(--bgLight);
+    background: var(--complimentary3);
     padding: 3rem 2rem;
     position: relative;
     text-align: center;
@@ -200,7 +200,7 @@ section.services .card-grid .card p {
 }
 
 section.services .card-grid .card:hover {
-    background: var(--complimentary3);
+    background: var(--bgLight);
 }
 
 section.services .card-grid .card:hover h2 {
@@ -208,6 +208,6 @@ section.services .card-grid .card:hover h2 {
 }
 
 section.services .card-grid .card:hover p {
-    color: var(--white);
+    color: var(--secondary);
 }
 
