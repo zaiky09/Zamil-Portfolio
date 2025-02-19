@@ -3,100 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
-        rel="stylesheet"
-    />
-    
-    <title>Zamil Portfolio</title>
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            <img src="/images/ZA (1).png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
     <header>
-        <div class="container">
-            <nav class="flex items-center justify-between">
-                <div class="left flex justify-right">
-                    <div class="logo">
-                        <img src="./images/ZA (1).png" width="50px" alt="logo">
-                    </div>
-                    <div class="nav-links">
-                        <a href="#">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#services">Services</a>
-                        <a href="#">Blog</a>
-                        <a href="#">More</a>
-                    </div>
-                </div>
-                <div class="right">
-                    <button class="btn btn-primary">Contact</button>
-                </div>
-            </nav>
-        </div>    
+        <img src="/images/DSC_6524.jpg" alt="Profile Picture" class="profile-pic">
+        <h1 class="hero-title">Welcome to My Portfolio</h1>
+        <p class="hero-subtitle">Showcasing my designs & creations</p>
     </header>
 
-    <div class="hero flex items-center justify-between">
-        <div class="left flex-1 justify-center">
-            <img src="./images/Untitled design (2).png" alt="Profile"/>
-        </div>
-        <div class="right flex-1">
-            <h6>Zamil Sheikh</h6>
-            <h1>I'm a Web <br><span>Developer</span></h1>
-            <p>Adventurous, conspiracy theorising individual with a knack for programming and a vision to make the world a better place, one action at a time. Just like code. :D</p>
-            <div>
-                <button class="btn btn-secondary">DOWNLOAD CV</button>
-            </div>
-        </div>
-    </div>
-
-    <section class="about" id="about">
-        <div class="container flex items-centre">
-            <div class="left flex-1 justify-right">
-                <img src="./images/WhatsApp Image 2024-05-21 at 09.58.29.jpeg" height="400px" alt="Profile pic"/>
-            </div>
-
-            <div class="right flex-1">
-                <h1>About <span>Me</span></h1>
-                <h3>Hello! I'm Zamil Sheikh.</h3>
-                <p>
-                    The software sorcerer whose coding skills are matched only by his love for sports and unraveling conspiracies! When he's not diving deep into lines of code, you'll catch him chasing goals on the field or uncovering hidden truths in the digital labyrinth. With a passion for both pixels and plot twists, I am always ready to tackle the next challenge, whether it's debugging a program or decoding the latest conspiracy theory!
-                </p>
-                <div class="socials">
-                    <a href="#"><img src="./images/vecteezy_creative-circle-map-of-africa-political-map-spiral_42127238.png" width="40px"/> </a>
-                    <a href="https://www.instagram.com/mozaik____?igsh=eWhycDh3Nnp4Z3Vy&utm_source=qr"><img src="./images/icons8-instagram-48.png" width="40px"/> </a>
-                    <a href="https://x.com/zamilmozamil1?s=11"><img src="./images/icons8-twitter-48.png" width="40px"/> </a>       
-                    <a href="https://www.linkedin.com/in/zamil-mozamil-7523aa1b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="./images/vecteezy_linkedin-png-icon_16716470.png" width="30px"/> </a>
-                </div>
+    <section id="about">
+        <div class="about-container">
+            <img src="/images/Untitled design (2).png" alt="About Me Image" class="about-img">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, I'm Zamil, a passionate designer and web developer. I specialize in creating visually appealing designs and functional websites. My goal is to bring creativity and professionalism to every project.</p>
             </div>
         </div>
     </section>
+    
 
-    <section class="services" id="services">
-        <div class="container">
-            <h1 class="services-head">Services</h1>
-                <p>Digital needs? ... Your at the right place.</p>
-            <div class="card-grid">
-                <div class="card">
-                    <img src="./images/vecteezy_3d-illustration-graphic-design_13473643.png" alt="card"/>
-                    <h2>Graphic Design</h2>
-                        <p>Make your brand pop, websites sing, and posters sizzle! From logo design to layout magic, turning bland into bold and blah into beautiful. So, whether you need a splash of color, a touch of typography, or a dose of design dazzle, get in touch for a visual adventure like no other!</p>
-                </div>
-                <div class="card">
-                    <img src="./images/vecteezy_sute-girl-hacker-with-laptop-avatar-in-cartoon-style_23338699.png" alt="card"/>
-                    <h2>Web Development</h2>
-                        <p>Picture this: coding wizards conjuring up captivating websites, making sure every pixel is in its place and every click is a delight. From front-end fun like eye-catching designs and user-friendly interfaces to back-end brilliance like database management and server sorcery, building virtual worlds where your ideas can roam free and your users can have a blast!</p>
-                </div>
-                <div class="card">
-                    <img src="./images/vecteezy_work-at-home-using-laptop-and-snack-learn-at-home-using_19875716.png" alt="card"/>
-                    <h2>Content Writing</h2>
-                        <p>The word wizards who sprinkle magic into every sentence, crafting tales that captivate and charm! They're the storytellers of the digital realm, weaving narratives that whisk readers away on adventures, whether it's through blog posts, website copy, or social media captions. Get in touch if you're in need of words that waltz off the page and into your audience's hearts.</p>
-                </div>
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="work-options">
+            <a href="#logos" class="work-option">Logos</a>
+            <a href="#websites" class="work-option">Websites</a>
+        </div>
+    
+        <div id="logos" class="gallery">
+            <h3>Logo Designs</h3>
+            <div class="item">
+                <img src="logo1.jpg" alt="Logo Design 1">
+                <p>Logo Design 1</p>
+            </div>
+            <div class="item">
+                <img src="logo2.jpg" alt="Logo Design 2">
+                <p>Logo Design 2</p>
+            </div>
+        </div>
+    
+        <div id="websites" class="gallery">
+            <h3>Website Projects</h3>
+            <div class="item">
+                <a href="https://magicalcontinent.com" target="_blank">
+                    <img src="/images/MagicalContinent.png" alt="Magical Continent Ltd">
+                </a>
+                <p><a href="https://magicalcontinent.com" target="_blank">Magical Continent Ltd</a></p>
+            </div>
+            <div class="item">
+                <a href="https://pet-finder-one.vercel.app/" target="_blank">
+                    <img src="/images/PetFinder.png" alt="PetFinder">
+                </a>
+                <p><a href="https://pet-finder-one.vercel.app/" target="_blank">PetFinder</a></p>
+            </div>
+            <div class="item">
+                <a href="https://beyond-border-merchants.vercel.app/" target="_blank">
+                    <img src="/images/BeyondBorder.png" alt="Beyond Border Merchants">
+                </a>
+                <p><a href="https://beyond-border-merchants.vercel.app/" target="_blank">Beyond Border Merchants</a></p>
+            </div>
+            <div class="item">
+                <a href="https://www.by-graces.vercel.app/" target="_blank">
+                    <img src="/images/ByGraces.png" alt="ByGraces">
+                </a>
+                <p><a href="https://www.by-graces.vercel.app/" target="_blank">By Graces</a></p>
             </div>
         </div>
     </section>
+    
+    
 
+    <section id="cv">
+        <h2>Download My CV</h2>
+        <a href="/assets/2025 CV.pdf" download class="btn">Download CV</a>
+    </section>
 
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:zamilmozamil@outlook.com">zamilmozamil@outlook.com</a></p>
+        <p>Phone: <a href="tel:+254702687992">+254702687992</a></p>
+        <p>Socials: 
+            <a href="#">Twitter</a> | 
+            <a href="#">LinkedIn</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
 </body>
 </html>
