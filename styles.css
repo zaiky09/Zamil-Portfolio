@@ -119,10 +119,28 @@ section {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr); /* 3 columns */
+    gap: 1.5rem; /* Adds spacing between items */
+    justify-items: center; /* Centers items */
     margin-top: 2rem;
 }
+
+.gallery .item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: #fff;
+    border: 2px solid #8b4513;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery .item img:hover {
+    transform: scale(1.1);
+}
+
 
 .item img {
     width: 100%;
