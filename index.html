@@ -65,12 +65,16 @@
                 <p>LSG</p>
             </div>
             <div class="item">
-                <img src="logos/7-removebg-preview.png" alt="Magical Continent Ltd">
+                <img src="logos/7.png" alt="Magical Continent Ltd">
                 <p>Magical Continent Ltd</p>
             </div>
             <div class="item">
-                <img src="logos/Beyondborders3.png" alt="Beyond Border Merchants">
+                <img src="logos/Beyondborders.png" alt="Beyond Border Merchants">
                 <p>Beyond Border Merchants</p>
+            </div>
+            <div class="item">
+                <img src="logos/tHIRSt.jpg" alt="Thirst Trap">
+                <p>Thirst Trap</p>
             </div>
         </div>
     
@@ -122,5 +126,34 @@
             
         </p>
     </footer>
+
+    <!-- Lightbox Structure -->
+    <div id="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const closeBtn = document.querySelector(".close");
+
+        // Open lightbox when an image is clicked
+        document.querySelectorAll(".gallery .item img").forEach(img => {
+            img.addEventListener("click", function() {
+                lightbox.style.display = "flex";
+                lightboxImg.src = this.src;
+            });
+        });
+
+        // Close lightbox when clicking the close button or outside the image
+        closeBtn.addEventListener("click", () => lightbox.style.display = "none");
+        lightbox.addEventListener("click", (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = "none";
+            }
+        });
+
+    </script>
 </body>
 </html>
